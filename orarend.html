@@ -1,102 +1,178 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="hu">
 <head>
+    <style>
+        body {
+          margin: 0;
+          font-family: "Lato", sans-serif;
+        }
+        
+        .sidebar {
+          margin: 0;
+          padding: 0;
+          width: 200px;
+          background-color: #f1f1f1;
+          position: fixed;
+          height: 100%;
+          overflow: auto;
+        }
+        
+        .sidebar a {
+          display: block;
+          color: black;
+          padding: 16px;
+          text-decoration: none;
+        }
+         
+        .sidebar a.active {
+          background-color: #04AA6D;
+          color: white;
+        }
+        
+        .sidebar a:hover:not(.active) {
+          background-color: #555;
+          color: white;
+        }
+        
+        div.content {
+          margin-left: 200px;
+          padding: 1px 16px;
+          height: 1000px;
+        }
+        
+        @media screen and (max-width: 700px) {
+          .sidebar {
+            width: 100%;
+            height: auto;
+            position: relative;
+          }
+          .sidebar a {float: left;}
+          div.content {margin-left: 0;}
+        }
+        
+        @media screen and (max-width: 400px) {
+          .sidebar a {
+            text-align: center;
+            float: none;
+          }
+        }
+        </style>
+        </head>
+        <body>
+        
+        <div class="sidebar">
+          <a href="főoldal.html">Főoldal</a>
+          <a  href="keplink.html">1. feladat</a>
+          <a href="listak.html">2. feladat</a>
+          <a class="active href="orarend.html">3. feladat </a>
+        </div>
+        
+        <div class="content">
+      
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-
-
-<head>
-<style>
-table {
-  font-family: arial, sans-serif;
-  border-collapse: collapse;
-  width: 100%;
-}
-
-td, th {
-  border: 1px solid #dddddd;
-  text-align: left;
-  padding: 8px;
-}
-
-
-}
-</style>
-</head>
 <body>
-
-<h2>HTML Órarend</h2>
-
-<table>
-  <tr>
-    <th>Hétfő</th>
-    <th>Kedd</th>
-    <th>Szerda</th>
-    <th>Csütörtök</th>
-    <th>Péntek</th>
     
-  </tr>
-  <tr>
-    <td>-</td>
-    <td>Magyar </td>
-    <td>-</td>
-    <td>Matematika</td>
-    <td>0-1.óra<br> Programozási alapok</td>
-    
-  </tr>
-  <tr>
-    <td>Magyar</td>
-    <td>Matematika</td>
-    <td>Tesnevelés</td>
-    <td>Digitális <br>kultúta</td>
-    <td>Magyar</td>
-    
-  </tr>
-  <tr>
-    <td>Történelem</td>
-    <td>Magyar</td>
-    <td>Matematika</td>
-    <td>Digitális<br>kultúra</td>
-    <td>Angol</td>
-  </tr>
-  <tr>
-    <td>Tesnevelés</td>
-    <td>Angol</td>
-    <td>IKT<br>projektmunka</td>
-    <td>Angol</td>
-    <td>Osztályfőnöki</td>
-  </tr>
-  <tr>
-    <td>Matematika</td>
-    <td>Komplex<br>természet</td>
-    <td>Történelem</td>
-    <td>Magyar</td>
-    <td>Matematika</td>
-  </tr>
-  <tr>
-    <td>Komplex<br>természet</td>
-    <td>IKT<br>projektmunka</td>
-    <td>Komplex<br>természet</td>
-    <td>Informatika és<br>távközlés</td>
-    <td>Történelem</td>
-  </tr>
-  <tr>
-    <td>Angol</td>
-    <td>Tesnevelés</td>
-    <td>-</td>
-    <td>Informatika és<br>távközlés</td>
-    <td>-</td>
-  </tr>
-  <tr>
-    <td>-</td>
-    <td>Tesnevelés</td>
-    <td>-</td>
-    <td>Informatika és<br>távközlés</td>
-    <td>-</td>
-</table>
-
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Document</title>
+  </head>
+  
+  
+  <head>
+  <style>
+  table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+  
+  
+  
+  </style>
+  </head>
+  <body>
+  
+  <h2>HTML Órarend</h2>
+  
+  <table>
+    <tr>
+      <th>Hétfő</th>
+      <th>Kedd</th>
+      <th>Szerda</th>
+      <th>Csütörtök</th>
+      <th>Péntek</th>
+      
+    </tr>
+    <tr>
+      <td>-</td>
+      <td>Magyar </td>
+      <td>-</td>
+      <td>Matematika</td>
+      <td>0-1.óra<br> Programozási alapok</td>
+      
+    </tr>
+    <tr>
+      <td>Magyar</td>
+      <td>Matematika</td>
+      <td>Tesnevelés</td>
+      <td>Digitális <br>kultúta</td>
+      <td>Magyar</td>
+      
+    </tr>
+    <tr>
+      <td>Történelem</td>
+      <td>Magyar</td>
+      <td>Matematika</td>
+      <td>Digitális<br>kultúra</td>
+      <td>Angol</td>
+    </tr>
+    <tr>
+      <td>Tesnevelés</td>
+      <td>Angol</td>
+      <td>IKT<br>projektmunka</td>
+      <td>Angol</td>
+      <td>Osztályfőnöki</td>
+    </tr>
+    <tr>
+      <td>Matematika</td>
+      <td>Komplex<br>természet</td>
+      <td>Történelem</td>
+      <td>Magyar</td>
+      <td>Matematika</td>
+    </tr>
+    <tr>
+      <td>Komplex<br>természet</td>
+      <td>IKT<br>projektmunka</td>
+      <td>Komplex<br>természet</td>
+      <td>Informatika és<br>távközlés</td>
+      <td>Történelem</td>
+    </tr>
+    <tr>
+      <td>Angol</td>
+      <td>Tesnevelés</td>
+      <td>-</td>
+      <td>Informatika és<br>távközlés</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>-</td>
+      <td>Tesnevelés</td>
+      <td>-</td>
+      <td>Informatika és<br>távközlés</td>
+      <td>-</td>
+  </table><footer>
+    <p>Elérhetőségem<br>
+    <a href="mailto:papsomosbenjamin@gmail.com">benihun995163</a></p>
+  </footer>
 </body>
 </html>
